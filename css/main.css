@@ -1,0 +1,74 @@
+#main {
+    background: black;
+    margin: 0 auto;
+    width: 50%;
+    padding: 5px 5px 5px 5px;
+}
+#primeiraDiv {
+    background: rgba(255, 255, 255, 0.50);
+    padding: 5px 5px 5px 5px;
+    margin:auto 0;
+}
+#MeusDados{
+	display: none;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.30);
+    padding: 10px 10px 10px 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 5px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size:25px;
+}
+
+#divNav a:hover {
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+#headerMenu {
+    background: white;
+    padding: 5px 5px 5px 5px;
+}
+#NavMenu {
+    background: rgba(5, 74, 0, 0.80);
+    padding: 5px 5px 5px 5px;
+    text-align:center;
+}
+
+
+#divDDList1 {
+    display: none;
+    
+}
+
+#divCheckBox1 {
+    display: none;
+}
+
+#divRadio1 {
+    display: none;
+}
+
+
+#rodape1 {
+    font-size:5px;
+    background: silver;
+    padding: 5px 5px 5px 5px;
+}
+
+h1 {
+    color:#000000;
+    text-align:center;
+
+}
