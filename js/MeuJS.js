@@ -35,7 +35,7 @@ function VerificaForm(){
         return false;
     }
     else {
-        alert("O formulario sesrá enviado com as seguintes informações:\n"+ "Nome: "+ nome + "\nSua fruta preferida é: " + ListDDLValue + "\nQuando cosutma comer essa fruta: " + itensCheckBoxValue + "Genero: " + RadioValue)
+        alert("O formulario será enviado com as seguintes informações:\n"+ "Meu nome é "+ nome + ", sou " + RadioValue+ ".\nGosto de comer " + ListDDLValue + " no " + itensCheckBoxValue)
     }
 	
 	
@@ -53,7 +53,7 @@ function VerificaForm(){
             return;
         }
         else {
-            alert("Escolha sua Fruta preferida");
+            alert("Escolha sua Fruta preferida.");
             document.form1.DDList1.focus();
             return false;
         }
@@ -66,10 +66,10 @@ function VerificaForm(){
         else if (divCheckBox.style.display == "block") {
             for (var i = 0; i < itensCheckBox.length; i++) {
                 if (itensCheckBox[i].type == 'checkbox' && itensCheckBox[i].checked == true)
-                    itensCheckBoxValue += itensCheckBox[i].value + "\n";
+                    itensCheckBoxValue += itensCheckBox[i].value + ",";
             }
-            if (itensCheckBoxValue == "" || itensCheckBoxValue == null) {
-                alert("Escolha pelo menos uma opção")
+            if (itensCheckBoxValue == "" && divCheckBox.style.display == "block") {
+                alert("Escolha pelo menos uma refeição.")
                 return false;
             }
         }
@@ -87,7 +87,7 @@ function VerificaForm(){
             return false;
         }
         else if (RadioValue == "" && DivRadio.style.display == "block") {
-            alert("Selecione seu genero ");
+            alert("Selecione o seu genero.");
             return false;
         }
         
